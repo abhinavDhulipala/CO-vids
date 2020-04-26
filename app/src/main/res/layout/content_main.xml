@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/about"
         android:layout_width="88dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
@@ -38,16 +38,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="358dp"
-        android:layout_height="282dp"
-        android:text="Welcome to CO-vid! This is an app designed to help leverage statistics to more aptly deliver tests and medical suipplies(Which are in short supply) to areas and locales that need it before an outbreak gets out of control. If you downloaded this app, you're probably worried that you might be exhibiting symptoms of corona virus. If that's the case please take the self-checker below(adapted from CDC guidlines).  By downloading this app you are already contributing to helping us understand this disease and save lives! Thank you so mcuh!"
+        android:id="@+id/intro"
+        android:layout_width="375dp"
+        android:layout_height="382dp"
+        android:background="@drawable/back6"
+        android:text="Welcome to CO-vid! This is an app designed to help leverage statistics to more aptly deliver tests and medical suipplies(Which are in short supply) to areas and locales that need it before an outbreak gets out of control. If you downloaded this app, you're probably worried that you might be exhibiting symptoms of corona virus. If that's the case please take the self-checker below(adapted from CDC guidlines). For this app to work, we need some anonomyzed gps data. Your saftey and privacy are our top concern. We will only take gps data if you display COVID19-like symptoms and we anonymyze your data.  By downloading this app you are already contributing to helping us understand this disease and save lives! Thank you so much!"
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="18sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/about" />
 
     <Button
         android:id="@+id/button4"
@@ -60,5 +62,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:onClick="startTest"/>
+
+    <TextView
+        android:id="@+id/aboutHint"
+        android:layout_width="289dp"
+        android:layout_height="40dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="(press the about button to make this intro disappear!)"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

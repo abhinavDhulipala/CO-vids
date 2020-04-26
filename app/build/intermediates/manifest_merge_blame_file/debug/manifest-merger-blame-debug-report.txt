@@ -14,9 +14,9 @@
 12    <uses-permission android:name="android.permission.INTERNET" />
 12-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:6:5-67
 12-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:6:22-64
-13    <uses-permission android:name="android.permission.CALL_PHONE" />
-13-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:7:5-68
-13-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:7:22-66
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:7:22-76
 14
 15    <dist:module dist:instant="true" />
 15-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:9:5-40
@@ -27,7 +27,7 @@
 17-->[com.google.firebase:firebase-database:16.0.4] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\1416a9ea9a0fe1121af837d315712c4b\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
 18
 19    <application
-19-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:11:5-45:19
+19-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:11:5-56:19
 20        android:allowBackup="true"
 20-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:12:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,132 +43,157 @@
 26-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:16:9-54
 27        android:supportsRtl="true"
 27-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:17:9-35
-28        android:theme="@style/AppTheme" >
-28-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:18:9-40
-29        <activity
-29-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:19:9-27:20
-30            android:name="com.abhi.co_vids.DangerSympActivity"
-30-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:20:13-47
-31            android:label="@string/title_activity_danger_symp"
-31-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:21:13-63
-32            android:parentActivityName="com.abhi.co_vids.MainActivity"
-32-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:22:13-55
-33            android:theme="@style/AppTheme.NoActionBar" >
-33-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:23:13-56
-34            <meta-data
-34-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:24:13-26:65
-35                android:name="android.support.PARENT_ACTIVITY"
-35-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:25:17-63
-36                android:value="com.abhi.co_vids.MainActivity" />
-36-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:26:17-62
-37        </activity>
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:18:9-40
+30        <activity
+30-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:19:9-22:68
+31            android:name="com.abhi.co_vids.CovidLikeActivity"
+31-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:20:13-46
+32            android:label="@string/title_activity_covid_like"
+32-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:21:13-62
+33            android:theme="@style/AppTheme.NoActionBar" />
+33-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:22:13-56
+34        <activity
+34-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:23:9-26:59
+35            android:name="com.abhi.co_vids.MildSympActivity"
+35-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:24:13-45
+36            android:label="@string/title_activity_mild_symp"
+36-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:25:13-61
+37            android:theme="@style/AppTheme.NoActionBar" />
+37-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:26:13-56
 38        <activity
-38-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:28:9-31:59
-39            android:name="com.abhi.co_vids.MainActivity"
-39-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:29:13-41
-40            android:label="@string/title_activity_main"
-40-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:30:13-56
+38-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:27:9-30:59
+39            android:name="com.abhi.co_vids.EmergencyActivity"
+39-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:28:13-46
+40            android:label="@string/title_activity_emergency"
+40-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:29:13-61
 41            android:theme="@style/AppTheme.NoActionBar" />
-41-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:31:13-56
-42        <activity android:name="com.abhi.co_vids.Register" >
-42-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:32:9-38:20
-42-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:32:19-43
-43            <intent-filter>
-43-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:33:13-37:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:34:17-69
-44-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:34:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:36:17-77
-46-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:36:27-74
-47            </intent-filter>
-48        </activity>
-49        <activity android:name="com.abhi.co_vids.Login" />
-49-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:39:9-43
-49-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:39:19-40
-50
-51        <meta-data
-51-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:42:9-44:57
-52            android:name="preloaded_fonts"
-52-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:43:13-43
-53            android:resource="@array/preloaded_fonts" />
-53-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:44:13-54
-54
-55        <activity
-55-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50
-56            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-56-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:25:13-85
-57            android:excludeFromRecents="true"
-57-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:26:13-46
-58            android:exported="true"
-58-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:27:13-36
-59            android:launchMode="singleTask"
-59-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:28:13-44
-60            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-60-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:29:13-102
-61            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-61-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:30:13-72
-62
-63        <service
-63-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:33:9-39:19
-64            android:name="com.google.firebase.components.ComponentDiscoveryService"
-64-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:34:13-84
-65            android:directBootAware="true"
-65-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-66            android:exported="false" >
-66-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:35:13-37
-67            <meta-data
-67-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:36:13-38:85
-68                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-68-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:37:17-109
-69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:38:17-82
-70            <meta-data
-70-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\4533c524d98fc2097fdf292dcf6b0115\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:15:13-17:85
-71                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-71-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\4533c524d98fc2097fdf292dcf6b0115\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:16:17-111
-72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\4533c524d98fc2097fdf292dcf6b0115\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:17:17-82
-73        </service>
-74
-75        <activity
-75-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-76            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-76-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-77            android:exported="false"
-77-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-78            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-78-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-79
-80        <provider
-80-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-81            android:name="com.google.firebase.provider.FirebaseInitProvider"
-81-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-82            android:authorities="com.abhi.co_vids.firebaseinitprovider"
-82-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-83            android:exported="false"
-83-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-84            android:initOrder="100" />
-84-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-85
-86        <meta-data
-86-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\7da4131606d2620fb78d51fe29b6b2ca\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-87            android:name="com.google.android.gms.version"
-87-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\7da4131606d2620fb78d51fe29b6b2ca\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-88            android:value="@integer/google_play_services_version" />
-88-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\7da4131606d2620fb78d51fe29b6b2ca\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-89
-90        <provider
-90-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-91            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-91-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-92            android:authorities="com.abhi.co_vids.lifecycle-process"
-92-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-93            android:exported="false"
-93-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-94            android:multiprocess="true" />
-94-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-95    </application>
-96
-97</manifest>
+41-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:30:13-56
+42        <activity
+42-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:31:9-39:20
+43            android:name="com.abhi.co_vids.DangerSympActivity"
+43-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:32:13-47
+44            android:label="@string/title_activity_danger_symp"
+44-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:33:13-63
+45            android:parentActivityName="com.abhi.co_vids.MainActivity"
+45-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:34:13-55
+46            android:theme="@style/AppTheme.NoActionBar" >
+46-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:35:13-56
+47            <meta-data
+47-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:36:13-38:65
+48                android:name="android.support.PARENT_ACTIVITY"
+48-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:37:17-63
+49                android:value="com.abhi.co_vids.MainActivity" />
+49-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:38:17-62
+50        </activity>
+51        <activity
+51-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:40:9-43:59
+52            android:name="com.abhi.co_vids.MainActivity"
+52-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:41:13-41
+53            android:label="@string/title_activity_main"
+53-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:42:13-56
+54            android:theme="@style/AppTheme.NoActionBar" />
+54-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:43:13-56
+55        <activity android:name="com.abhi.co_vids.Register" >
+55-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:44:9-50:20
+55-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:44:19-43
+56            <intent-filter>
+56-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:45:13-49:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:46:17-69
+57-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:46:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:48:17-77
+59-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:48:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity android:name="com.abhi.co_vids.Login" />
+62-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:51:9-43
+62-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:51:19-40
+63
+64        <meta-data
+64-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:53:9-55:57
+65            android:name="preloaded_fonts"
+65-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:54:13-43
+66            android:resource="@array/preloaded_fonts" />
+66-->C:\Users\0_Abhi_Admin\Desktop\Personal_Projects\cal-hacks-2020\CO-vids\app\src\main\AndroidManifest.xml:55:13-54
+67
+68        <activity
+68-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50
+69            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+69-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:25:13-85
+70            android:excludeFromRecents="true"
+70-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:26:13-46
+71            android:exported="true"
+71-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:27:13-36
+72            android:launchMode="singleTask"
+72-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:28:13-44
+73            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+73-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:29:13-102
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+74-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:30:13-72
+75
+76        <service
+76-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:33:9-39:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:34:13-84
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:35:13-37
+80            <meta-data
+80-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:36:13-38:85
+81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+81-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:37:17-109
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\99d8a211b1d17491e9c45bb8308cfe6d\firebase-auth-19.3.1\AndroidManifest.xml:38:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\4533c524d98fc2097fdf292dcf6b0115\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:15:13-17:85
+84                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+84-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\4533c524d98fc2097fdf292dcf6b0115\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:16:17-111
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\4533c524d98fc2097fdf292dcf6b0115\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:17:17-82
+86        </service>
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+95            android:authorities="com.abhi.co_vids.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+96            android:exported="false"
+96-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+97            android:initOrder="100" />
+97-->[com.google.firebase:firebase-common:19.3.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\a7b2d3ca01aeee1753f969d78692bcb1\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\7da4131606d2620fb78d51fe29b6b2ca\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\7da4131606d2620fb78d51fe29b6b2ca\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\7da4131606d2620fb78d51fe29b6b2ca\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+102
+103        <provider
+103-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+104            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+104-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+105            android:authorities="com.abhi.co_vids.lifecycle-process"
+105-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+106            android:exported="false"
+106-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+107            android:multiprocess="true" />
+107-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\0_Abhi_Admin\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+108    </application>
+109
+110</manifest>

@@ -1051,6 +1051,8 @@ drawable back
 drawable back2
 drawable back3
 drawable back4
+drawable back5
+drawable back6
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1076,7 +1078,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable draw5
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
@@ -1106,6 +1107,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable side_nav_bar
+drawable stop
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font adamina
@@ -1115,6 +1117,9 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id about
+id aboutHint
+id accident
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1157,6 +1162,12 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id checkBox
+id checkBox2
+id checkBox3
+id checkBox4
+id checkBox5
+id checkBox6
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1165,6 +1176,7 @@ id collapseActionView
 id container
 id content
 id contentPanel
+id continueOn
 id coordinator
 id custom
 id customPanel
@@ -1179,11 +1191,15 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id eButton10
 id eButton2
 id eButton3
 id eButton4
 id eButton5
 id eButton6
+id eButton7
+id eButton8
+id eButton9
 id edit_query
 id email
 id end
@@ -1193,6 +1209,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1213,6 +1230,7 @@ id ifRoom
 id image
 id include
 id info
+id intro
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1229,6 +1247,7 @@ id masked
 id media_actions
 id message
 id middle
+id mildSymp
 id mini
 id mobile_navigation
 id mtrl_child_content_container
@@ -1243,6 +1262,7 @@ id nav_slideshow
 id nav_tools
 id navigation_header_container
 id never
+id noCovid
 id none
 id normal
 id notification_background
@@ -1322,6 +1342,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1332,6 +1353,7 @@ id titleDividerNoCustom
 id title_template
 id toLogin
 id toRegister
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1398,12 +1420,18 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_covid_like
 layout activity_danger_symp
+layout activity_emergency
 layout activity_login2
 layout activity_main
+layout activity_mild_symp
 layout activity_register
+layout content_covid_like
 layout content_danger_symp
+layout content_emergency
 layout content_main
+layout content_mild_symp
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1418,6 +1446,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_about
+layout fragment_permissions_explain
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1525,6 +1555,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string invalid_password
 string invalid_username
@@ -1555,9 +1586,12 @@ string prompt_email
 string prompt_password
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_covid_like
 string title_activity_danger_symp
+string title_activity_emergency
 string title_activity_login
 string title_activity_main
+string title_activity_mild_symp
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

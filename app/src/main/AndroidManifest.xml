@@ -4,7 +4,7 @@
     package="com.abhi.co_vids">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <dist:module dist:instant="true" />
 
@@ -16,6 +16,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".CovidLikeActivity"
+            android:label="@string/title_activity_covid_like"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MildSympActivity"
+            android:label="@string/title_activity_mild_symp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmergencyActivity"
+            android:label="@string/title_activity_emergency"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DangerSympActivity"
             android:label="@string/title_activity_danger_symp"
@@ -37,7 +49,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login" />
-
 
         <meta-data
             android:name="preloaded_fonts"
