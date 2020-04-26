@@ -25,8 +25,8 @@
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="com.abhi.co_vids.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:name="com.abhi.co_vids.ui.account.AccountFragment"
+        android:label="@string/menu_account"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
