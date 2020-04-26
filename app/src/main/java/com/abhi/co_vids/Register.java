@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -73,17 +74,28 @@ public class Register extends AppCompatActivity {
                                 Map<String, String> umap = new HashMap<>();
                                 umap.put("phone", phoneText);
                                 umap.put("email", emailText);
-                                docRef.set(uid).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                docRef.set(umap).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
-                                        // nu = new user
+                                        // nu: new user
                                         Log.d("nu", "New user created successfully");
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        // fsf: Firestore Fail
+                                        Log.e("fsf", "onFailure: " + e.getMessage(), e);
                                     }
                                 });
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             } else {
                                 Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.d("of", "onFailure: " + e.getMessage());
                         }
                     });
                 }
