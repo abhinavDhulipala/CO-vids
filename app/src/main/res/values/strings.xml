@@ -28,4 +28,9 @@
     <string name="account">Account</string>
     <string name="log_out">Log Out</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="begin">Begin!</string>
+    <string name="about">About</string>
+    <string name="title_activity_danger_symp">DangerSympActivity</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
 </resources>

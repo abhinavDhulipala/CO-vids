@@ -1,9 +1,7 @@
 package com.abhi.co_vids;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -14,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.common.util.NumberUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -25,12 +24,13 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Pattern;
+
+import io.opencensus.internal.StringUtil;
 
 public class Register extends AppCompatActivity {
 
-    private EditText email, password, passwordConfirm, phone;
-    private Button register, toLogin;
+    private EditText email, password, passwordConfirm, phone, age, gender;
+    private Button toLogin;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
     private FirebaseFirestore fstore = FirebaseFirestore.getInstance();
 
@@ -42,17 +42,20 @@ public class Register extends AppCompatActivity {
         password = findViewById(R.id.password);
         passwordConfirm = findViewById(R.id.passwordConfirm);
         phone = findViewById(R.id.phoneNumber);
-        register = findViewById(R.id.register);
+        age = findViewById(R.id.age);
+        gender = findViewById(R.id.gender);
         if (mAuth.getCurrentUser() != null) {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
-        register.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String emailText = email.getText().toString().trim();
                 String passwordText = password.getText().toString().trim();
                 final String phoneText = phone.getText().toString().trim();
+                final String ageText = age.getText().toString().trim();
+                final String genderText = gender.getText().toString().trim().toLowerCase();
 
                 if (!emailText.isEmpty() && !Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
                     CharSequence message = "please enter a valid email";
@@ -63,6 +66,10 @@ public class Register extends AppCompatActivity {
                 } else if (!phone.getText().toString().matches( "^[0-9]{10,13}$")) {
                     CharSequence text = "Please enter valid phone number";
                     Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+                } else if (!isNumeric(ageText) && Integer.parseInt(ageText) < 1 || Integer.parseInt(ageText) > 130) {
+                    Toast.makeText(getApplicationContext(), "Please enter valid age", Toast.LENGTH_SHORT).show();
+                } else if (!("female f".contains(genderText) || "male m".contains(genderText) || "other".equals(genderText))) {
+                    Toast.makeText(getApplicationContext(), "Please enter either: male, female, or other", Toast.LENGTH_SHORT).show();
                 } else {
                     mAuth.createUserWithEmailAndPassword(emailText, passwordText).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -74,6 +81,8 @@ public class Register extends AppCompatActivity {
                                 Map<String, String> umap = new HashMap<>();
                                 umap.put("phone", phoneText);
                                 umap.put("email", emailText);
+                                umap.put("gender", genderText);
+                                umap.put("age", ageText);
                                 docRef.set(umap).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
@@ -101,8 +110,20 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
+        findViewById(R.id.toLogin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Login.class));
+            }
+        });
     }
 
-
-
+    public boolean isNumeric(String num) {
+        try {
+            Integer.parseInt(num);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
 }
