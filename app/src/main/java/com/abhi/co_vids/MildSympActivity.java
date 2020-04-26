@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -43,13 +44,9 @@ public class MildSympActivity extends AppCompatActivity {
                 overAllSeriousness += lessSerious1.isChecked() ? 1 : 0;
                 overAllSeriousness += lessSerious2.isChecked() ? 1 : 0;
                 overAllSeriousness += lessSerious3.isChecked() ? 1 : 0;
+                Log.d("OC", "onClick: " + overAllSeriousness);
                 if (overAllSeriousness >= 3) {
-                    if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED) {
-                        requestPermissions(new String[]{Manifest.permission.INTERNET}, 2);
-                    }
-                    if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                        requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-                    }
+                    Log.d("OC", "onClick: serious");
                     startActivity(new Intent(getApplicationContext(), CovidLikeActivity.class));
                 } else {
                     noCovid.setVisibility(View.VISIBLE);
