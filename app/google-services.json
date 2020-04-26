@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "80344507146",
+    "firebase_url": "https://co-vids.firebaseio.com",
+    "project_id": "co-vids",
+    "storage_bucket": "co-vids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80344507146:android:2f4f0908a734d2b84bd0f3",
+        "android_client_info": {
+          "package_name": "com.abhi.co_vids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80344507146-otd1ea0oucrrq1ivn6q9n4ia8qfn6qb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhi.co_vids",
+            "certificate_hash": "f4f7130dbe1a7b632a7df6e58b5ec116fde30f1a"
+          }
+        },
+        {
+          "client_id": "80344507146-7c6mrkhhh572laj7gj33mfcpl0ri5s8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5gW2Eb2eCebrP_rBy-jlbKsCw7-nOfrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80344507146-7c6mrkhhh572laj7gj33mfcpl0ri5s8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
