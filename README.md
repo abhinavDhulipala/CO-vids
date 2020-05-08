@@ -1,5 +1,6 @@
 # CO-vids
 Android app to help more effeciently deploy scarse resources.
+
 ## Inspiration
 
 COVID-19 testing supply shortages have ignited concerns in people about whether they or their loved ones have caught the disease. Many areas have resorted to testing only those who show symptoms, limiting the potential effectiveness of the tests and doing little to calm a nervous public. We noticed the critical bottleneck is that tests are usually applied retroactively and only to those who are already likely ill. This bottleneck will become increasingly constraining as governments worldwide ease their social distancing restrictions, allowing the disease to quickly spread across towns, forcing them to reapply blanket quarantines.
